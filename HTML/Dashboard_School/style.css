@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Margarine&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+:root {
+    /*----font family-----*/
+    --ff-primary: 'roboto', sans-serif;
+    --ff-secondary: 'inter', sans-serif;
+    --ff-tertiary: 'satisfy', cursive;
+    --ff-brand: "margarine", sans-serif;
+
+    /*----colors-----*/
+    --clr-white: #fff;
+    --clr-dark: #333;
+    --clr-grey-1: #102a42;
+    --clr-grey-2: #617d98;
+    --clr-grey-3: #f1f5f8;
+    --clr-primary: #f53b57;
+    --clr-primary-light: #f04660;
+    --clr-secondary: #e9b949;
+    --transition: all 0.3s ease-in-out;
+
+}
+.topbar{
+    background-color: black;
+    height: 50px;
+    width: 100%;
+}
+.contact{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: var(--ff-secondary);
+    font-size: 20px;
+}
+.topbarelement{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.media li{
+    display: inline;
+    padding: 0 10px;   
+    color: white; 
+    height: 10px;
+   
+}
+ a .fa-facebook ,.fa-twitter,.fa-instagram{
+    color: #fff;
+    font-size: 2rem;
+    padding: 2px;
+ }
+.fa-instagram:hover{
+    color:var(--clr-secondary)
+ }
+ .fa-twitter:hover{
+    color:var(--clr-secondary)
+
+ } 
+ .fa-facebook:hover{
+    color:var(--clr-secondary)
+
+ }
