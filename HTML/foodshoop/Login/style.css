@@ -25,24 +25,29 @@ a {
 
 .login {
   display: flex;
-}
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 100px;
+  justify-content: space-between;
 
-header {
-  height: 1080px;
-  width: 1920px;
-  background-color: #fff;
 }
 
 .mainbox {
-  margin-left: 180px;
-  margin-top: 233px;
   display: flex;
   flex-direction: column;
-  width: 459px;
-  height: 662px;
-  
-  gap: 24px;
+  height: fit-content;
+  padding: 2rem;
+  gap: 10px;
 
+}
+
+.food-image {
+  height: 100%;
+}
+
+.food-image img {
+  height: 600px;
 }
 
 .mainbox .logo {
@@ -51,26 +56,22 @@ header {
 }
 
 .mainbox .logo img {
-  width: 185px;
-  height: 58px;
+  width: 180px;
 }
 
 .mainbox .loginbox {
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .mainbox .loginbox .signin-logo {
   justify-content: center;
-  width: 214px;
-  height: 96px;
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 
 }
 
@@ -80,17 +81,14 @@ header {
 
 }
 
-.mainbox .loginbox .signin-logo div h3 {
+.mainbox .loginbox .signin-logo h3 {
   font-family: 'Playfair Display', serif;
-
-
   font-weight: bold;
-  font-size: 40px;
-  line-height: 31px;
+  font-size: 32px;
   color: var(--text--clr);
 }
 
-.mainbox .loginbox .signin-logo div p {
+.mainbox .loginbox .signin-logo p {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: regular;
@@ -102,9 +100,8 @@ header {
   flex-direction: column;
   gap: 8px;
   width: 459px;
-  height: 220px;
   width: 100%;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .loginbox .input .userinput {
@@ -115,7 +112,7 @@ header {
 
 .loginbox .input label {
   font-family: 'Poppins', sans-serif;
-  font-weight: regular;
+  font-weight: 300;
   font-size: 16px;
   line-height: 175%;
   color: var(--label--clr);
@@ -123,75 +120,58 @@ header {
 
 .loginbox .input input {
   width: 434px;
-  height: 44px;
   border: 2px solid #ea6812c7;
   border-radius: 24px;
   padding: 16px 8px;
 }
 
-.loginbox .input .checkbox {
-  .check {
-    width: 16px;
-    height: 16px;
-
-  }
-
+.Remember {
   display: flex;
-
-  font-family: 'Poppins',
-  sans-serif;
-  font-weight: regular;
-  font-size: 16px;
-  line-height: 175%;
-  gap: 166px;
-  padding: 8px 0px;
-  justify-content: center;
-
-  p {
-    color: #959895;
-  }
-
-  a {
-    color: var(--primary--clr);
-  }
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
+
+.remeber-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.remeber-me .check {
+  width: 14px !important;
+  height: 14px;
+}
+
 
 .loginbox .sign-in-button {
   display: flex;
-  width: 188px;
-  height: 44px;
-
+  padding: 14px 50px;
   justify-content: center;
   align-items: center;
   border-radius: 44px;
-  border: 1px solid var(--primary-Primary-EA6A12, #EA6A12);background: var(--primary-Primary-FFBA43, #EA6A12);
+  border: 1px solid var(--primary-Primary-EA6A12, #EA6A12);
+  background: var(--primary-Primary-FFBA43, #EA6A12);
 
 }
 
-.loginbox .sign-in-button a {
+.loginbox .sign-in-button {
   color: white;
-  font-family: Poppins;
-  line-height: 175%;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 2px;
-  font-size: 16px;
-  font-weight: regular;
-  padding: 8px 24px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 175%;
-  letter-spacing: 0.32px;
+  font-weight: 500;
   transition: 0.3s ease;
-
-
 }
-.loginbox .sign-in-button:hover{
+
+.loginbox .sign-in-button:hover {
   cursor: pointer;
   background-color: white;
-  a{
-    color: #EA6A12;
-  }
+  color: #EA6A12;
 }
-.loginbox .social{
+
+.loginbox .social {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -205,77 +185,15 @@ header {
   line-height: 175%;
   letter-spacing: 0.32px;
 
-  a{
+  a {
     color: var(--primary--clr);
   }
 
 }
 
-.loginbox .social .social-links{
+.loginbox .social .social-links {
   display: flex;
   align-items: flex-start;
   gap: 24px;
-  
-  
 
-
-}
-
-.login .food-image{
-  position: relative;
-  width: 854px;
-  height: 765.94px;
-  margin: auto;
-  margin: 20%;
-
-}
-.login .food-image .item{
-  position: absolute;
-  width: 150px; 
-  height: 150px;
-  
-  background-size: cover;
-  background-position: center;
-  
-}
-.login .food-image .item1{
-  top: 0;
-  left: 50%;
-  transform: rotate(0deg) translateX(250px) rotate(0deg);
-   img{
-    border-radius: 300px;
-   }
-}
-  
-.login .food-image .item2{
-  top: 0;
-  left: 50%;
-  transform: rotate(60deg) translateX(250px) rotate(-60deg);
-  height: 130px;
-  width: 130px;
-  
-}
-.login .food-image .item3{
-  top: 0;
-  left: 50%;
-  transform:  rotate(120deg) translateX(250px) rotate(-120deg);;
-  
-}
-.login .food-image .item4{
-  top: 0;
-  left: 50%;
-  transform: rotate(180deg) translateX(250px) rotate(-180deg);;
-  
-}
-.login .food-image .item5{
-  top: 0;
-  left: 50%;
-  transform: rotate(240deg) translateX(250px) rotate(-240deg);;
-  
-}
-.login .food-image .item6{
-  top: 0;
-  left: 50%;
-  transform:  rotate(300deg) translateX(250px) rotate(-300deg);;
-  
 }
