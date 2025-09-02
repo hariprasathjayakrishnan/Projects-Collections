@@ -220,3 +220,62 @@ header {
 
 
 }
+
+.login .food-image{
+  position: relative;
+  width: 854px;
+  height: 765.94px;
+  margin: auto;
+  margin: 20%;
+
+}
+.login .food-image .item{
+  position: absolute;
+  width: 150px; 
+  height: 150px;
+  
+  background-size: cover;
+  background-position: center;
+  
+}
+.login .food-image .item1{
+  top: 0;
+  left: 50%;
+  transform: rotate(0deg) translateX(250px) rotate(0deg);
+   img{
+    border-radius: 300px;
+   }
+}
+  
+.login .food-image .item2{
+  top: 0;
+  left: 50%;
+  transform: rotate(60deg) translateX(250px) rotate(-60deg);
+  height: 130px;
+  width: 130px;
+  
+}
+.login .food-image .item3{
+  top: 0;
+  left: 50%;
+  transform:  rotate(120deg) translateX(250px) rotate(-120deg);;
+  
+}
+.login .food-image .item4{
+  top: 0;
+  left: 50%;
+  transform: rotate(180deg) translateX(250px) rotate(-180deg);;
+  
+}
+.login .food-image .item5{
+  top: 0;
+  left: 50%;
+  transform: rotate(240deg) translateX(250px) rotate(-240deg);;
+  
+}
+.login .food-image .item6{
+  top: 0;
+  left: 50%;
+  transform:  rotate(300deg) translateX(250px) rotate(-300deg);;
+  
+}

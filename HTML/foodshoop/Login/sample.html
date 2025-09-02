@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Images</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f4f4f4;
+    }
+
+    .circle-wrapper {
+      position: relative;
+      width: 400px;
+      height: 400px;
+    }
+
+    /* Center big image */
+    .circle-wrapper .big-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .circle-wrapper .big-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    /* Small images */
+    .circle-wrapper img.small {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      top: 50%;
+      left: 50%;
+      transform-origin: 0 -150px; /* distance from center */
+    }
+  </style>
+</head>
+<body>
+  <div class="circle-wrapper">
+    <!-- Center image -->
+    <div class="big-image">
+      <img src="pexels-jonathan-borba-3009323.png" alt="">
+    </div>
+
+    <!-- Circle images -->
+    <img class="small" src="Frame 37293.png" alt="">
+    <img class="small" src="Frame 37294.png" alt="">
+    <img class="small" src="Frame 37295.png" alt="">
+    <img class="small" src="Frame 37296.png" alt="">
+    <img class="small" src="Frame 37299.png" alt="">
+  </div>
+
+  <script>
+    const images = document.querySelectorAll(".circle-wrapper img.small");
+    const angleStep = 360 / images.length; // divide full circle by number of images
+
+    images.forEach((img, index) => {
+      const angle = angleStep * index;
+      img.style.transform = `rotate(${angle}deg) translate(150px) rotate(-${angle}deg)`;
+    });
+  </script>
+</body>
+</html>
