@@ -1,0 +1,218 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+
+    --poppins-font: 'Poppins', sans-serif;
+    --text-clr:#07143B;
+    --secondary-text-clr: #EA6A12;
+}
+body{
+    background-color: #FCEDE3;
+}
+nav{
+    position: fixed;
+    width: calc(100% - 5rem);
+    height: 60px;
+    /* background-color: rgba(0, 0, 0, 0.363); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 1rem;
+    left: 5rem;
+    background-color: #fff;
+    z-index: 1;
+    
+}
+
+#myInput {
+  background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px;
+  width: 100%;
+  font-size: 14px;
+  padding: 4px 20px 4px 40px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-family: 'poppins', sans-serif;
+  letter-spacing: 1px;
+}
+
+.notification-profile{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.notification-profile .profile{
+    display: flex;
+    gap: 1rem;
+    font-family: 'poppins', sans-serif;
+    color: var(--text-clr);
+    padding: 8px 0 8PX 0;
+    width: fit-content;
+    height: auto;
+}
+#username{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#userposition{
+    font-weight: 300;
+    font-size: 12px;
+    color: gray;
+}
+#profileimage{
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+   
+}
+aside{
+    height: 100vh;
+    width:5rem ;
+    /* background-color: rgba(0, 0, 0, 0.226); */
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+    
+
+}
+aside .logo{
+    height: 60px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #dfdfdf;
+    
+    
+    
+}
+#imglogo{
+    width: auto;
+    height: 50px;
+    
+}
+aside .side-icons{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+.side-icons .active {
+    width: 40px;
+    height: auto;
+}
+.side-icons img{
+    width: 30px;
+    height: auto;
+    
+}
+
+
+section{
+  position: relative;
+  left: 5rem;
+  top: 60px;
+  width: calc(100% - 5rem);
+  padding: 1.5rem;
+  
+}
+
+
+.user-profile-section{
+  position: relative;
+  
+}
+#background-banner{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius:  20px;
+}
+  
+
+.user-profile-section .banner-box {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  backdrop-filter: blur(10px);
+  background-color: #d4d4d48a;
+  padding: 0 20px;
+  justify-content: space-between;
+  font-weight: 300;
+}
+.user-profile-section .banner-box .user-content{ 
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+   
+  font-family: 'poppins', sans-serif;
+  color: var(--text-clr);
+  gap: 1.5rem;
+  
+}
+#banner-username{
+  color: var(--secondary-text-clr);
+  font-family: 'Playfair Display', serif;
+}
+#userprofile{
+  height: 100%;
+  width: auto;
+  margin-bottom: 20%;
+}
+.user-details{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.user-details .location{
+  display: flex;
+  align-items: center;
+  gap:5px;
+}
+.user-contact{
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.box-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+.box-items .item{
+  background-color: var(--secondary-text-clr);
+  display: flex;
+  height: 60%;
+  width: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #fff;
+  font-family: 'poppins', sans-serif;
+  
+}
