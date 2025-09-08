@@ -253,7 +253,7 @@ section{
   flex-direction: column;
   height: fit-content;
   padding:   1rem 1rem 0 1rem;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 12px;
 }
 .block-heading{
@@ -309,7 +309,7 @@ section{
   flex-direction: column;
   height: fit-content;
   padding:   1rem 1rem 0 1rem;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 12px;
   
 }
@@ -357,20 +357,261 @@ section{
 
 .column-two{
   /* background-color: blue;  */
-  margin: 0 12px;
-  flex-grow: 1; 
+  margin: 0 12px; 
   width: 47%;
- 
-   
+
+
+}
+#downarrow{
+  height: 20px;
+  width: auto;
+}
+.foodcard{
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--body-clr);  
 }
 
+.firstcard{
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: "Poppins",sans-serif;
+
+}
+.heading{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 1rem 1rem;
+}
+.heading-left{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.heading-left ul h2{
+  font-weight: 600;
+  font-size: medium;
+  color: var(--text-clr);
+}
+.heading-left ul p{
+  font-weight: 400;
+  font-size: small;
+  color: var(--secondary-text-clr);
+}
+
+.heading-left img{
+  border-radius: 50%;
+  
+}
+.heading-right{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 300;
+  color:var(--text-clr);
+}
+
+.foodplate{
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+.foodplate img{
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+
+}
+.likes-and-shares svg{
+  height: 30px;
+  width: auto;
+  color: #07143B;
+  
+}
+.likes-and-shares{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem ;
+  align-items: center;
+  font-family: 'Poppins',sans-serif;
+
+}
+.likes{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-clr);
+
+}
+.shares{
+  display: flex;
+  align-items: center;
+  color: var(--secondary-text-clr);
+  gap: 5px;
+}
+.shares svg{
+  color: var(--secondary-text-clr);
+}
+.nextfoodcard{
+  padding: 1rem ;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  color: var(--light-font-clr);
+  border-bottom: 2px solid var(--body-clr);
+}
+.review-block{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+.review-block .review1{
+  display: flex;
+  gap: 0.5rem;
+  font-family: 'Poppins',sans-serif;
+  font-size: small;
+  font-weight: 400;
+  color: var(--light-font-clr);
+  align-items: flex-start;
+  padding: 1rem;
 
 
 
+}
+.reviewer-profile{
+  height: auto;
+  width: 50px;
+  align-items: flex-start
+}
+.reviewer-info{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
 
+.reviewer-profile img{
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  border-radius: 50%;
+  top: 0%;
+}
+.reviewername{
+  color: var(--text-clr);
+  font-weight: 600;
+}
+.review-options{
+  display: flex;
+  gap: 8px;
+  color: var(--secondary-text-clr);
+  font-size: small;
+  font-weight: 400;
+  align-items: center;
 
+}
+.review-options svg{
+  height: 30px;
+  width: auto;
+  color: var(--secondary-text-clr);
+  
 
+}
+#review-times{
+  color: var(--light-font-clr);
+}
 
+.chat-box {
+      
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--borer-line-clr);
+  border-radius: 100px;
+
+}
+
+.chat-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 15px;
+  padding: 6px;
+      
+}
+
+.chat-box input::placeholder {
+  color: #aaa;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.icons i {
+  font-size: 1rem;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.icons i:hover {
+  color: var(--secondary-text-clr);
+}
+
+.nextfoodcard2{
+  padding: 1rem 0;
+}
+.likes-and-shares-2nd-profile{
+  padding: 1rem 0;
+
+}
+.chat-box-card2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5em 1rem;
+  border-radius: 100px;
+
+}
+
+.foodcard-review2{
+  border-bottom: none;
+}
+footer{
+  width: calc(100%  - 5rem);
+  position: relative;
+  height: 40px;
+  background-color: white;
+  left:5rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins',sans-serif;
+  align-items: center;
+  font-size: small;
+  font-weight: 400;
+}
+footer div{
+  display: flex;
+  gap: 10px;
+}
+footer div span{
+  color: var(--secondary-text-clr);
+}
 
 
 
@@ -407,5 +648,22 @@ section{
   height: auto;
 
 }
+.offercar{
+  position: relative;
+}
+.order-now-btn{
+  position: absolute;
+  
+  width: 100px;
+  height: 40px;
+  background-color: var(--secondary-text-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  bottom: 0;
+}
+
+
 
   
